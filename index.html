@@ -4,54 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <!--Using normalize to reset browser styles-->
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <title>Google.com</title>
 </head>
 <body>
-    
-        <div class="header">
-            <ul>
-                <li>Gmail</li>
-                <li>Images</li>
-                <li><button 
-                    type="button">
-                    <i class="fas fa-th"></i>
-                </button></li>
-                <li><img
-                src = "https://i.pinimg.com/originals/8b/6e/c6/8b6ec60427f9b17c1d9aaf4c415babe3.png"
-                alt=""></li>
-            </ul>
+    <header>
+        <nav>
+            <a class = "nav__item"
+            href="#">Gmail</a>
+            <a class = "nav__item"
+            href="#">Images</a>
+            <div class = "dropdown--wrapper">
+                <i class="fas fa-th nav__item"></i>
+                <!--This will only shows on hover-->
+                <div class="dropdown">
+                    <div class = "dropdown__item">
+                        <i class="fab fa-google"></i>
+                        <p>Search</p>
+                    </div>
+                    <div class = "dropdown__item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Maps</p>
+                    </div>
+                    <div class = "dropdown__item">
+                        <i class="fab fa-google-drive"></i>
+                        <p>Drive</p>
+                    </div>
+                    <div class = "dropdown__item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <p>Calendar</p>
+                    </div>
+                    <div class = "dropdown__item">
+                        <i class="fas fa-image"></i>
+                        <p>Photos</p>
+                    </div>
+                    <div class = "dropdown__item">
+                        <i class="fas fa-sticky-note"></i>
+                        <p>Keep</p>
+                    </div>
+            </div>
         </div>
-        
-            <div class="logo">
+            <img 
+            class = "profile__img nav__item"
+            src = "https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_1280.png"
+            alt = "Profile picture">
+        </nav>
+    </header>
+    
+    <div class="main">
+
+        <div class="logo">
                 <img 
                 class = "googlelogo"
-                src = "http://1000marcas.net/wp-content/uploads/2019/11/Google-Logo.png" alt="">
-           
-            </div>
-            <div class="main__body">
+                src = "http://1000marcas.net/wp-content/uploads/2019/11/Google-Logo.png" 
+                alt="">
+        </div>
+                <br>
                 <input
                 class = "input__search"
                 type = "text"
                 name = "search" >
-            
-                <div class="buttons">
-                <button 
-                    type="button">
-                    Buscar con Google
-                </button>
+            <i class="fas fa-microphone"></i>
+            <br>
+        <div class="mybuttons">
+            <button 
+            type="button">
+                Google Search
+            </button>
 
-                <button 
-                    type="button">
-                    Me siento con suerte
-                </button>
-                </div>
-            </div>
-                <div class="footer">
-                    <p> Ofrecido por Google en: <a href="#">English </a>
-                    <a href="#">Español (Latinoamérica) </a></p>
-                </div>
+            <button 
+            type="button">
+                I'm Feeling Lucky!
+            </button>
+        </div>
+    </div>
+       
+            
+        
+            
+        
+                
+                
+            
+               
            
                 
         
